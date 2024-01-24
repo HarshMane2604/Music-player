@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonance Hub - Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="nav"> 
+            <div class="nav-logo">
+              <img src="https://img.pikbest.com/png-images/play-gradient-vector-logo-design-on-black-background_1620095.png!w700wp" alt="Spotify">
+              <h2> Resonance Hub</h2>
+            </div>
+            
+            <div class="nav-menu">
+                <div class="nav-mid">
+                    <li><i class="ri-home-2-fill"></i> <span>Home</span> </li>
+                    <li><i class="ri-search-line"></i><span> Search </span> </li>
+                    <li><i class="ri-folders-line"></i><span> Your Library</span></li>
+                    <li><i class="ri-arrow-down-circle-line"></i> <span> Install App</span></li>
+                    
+                </div>
+                
+                <div class="nav-end">
+                    <i class="ri-notification-2-fill"></i>
+                    <i class="ri-account-circle-fill"></i>
+                </div>
+
+                <i class="ri-menu-fill"></i>
+            </div>            
+    </div>
+
+    <div class="main">
+        <div class="player">
+            <div class="song-gif">
+                <img src="playing.gif" id="gif" alt=""> <span id="masterSongName">Asal Mein</span>
+            </div>
+            <div class="song-img">
+                <img src="covers/cover-1.jpg" id="masterCoverImg" alt="">
+            </div>
+            <div class="bottom">
+                <input type="range" name="range" class="progress-bar" min="0" value="0" max="100">
+                <div class="bottom-options">
+                    <i class="ri-skip-back-line" id="previous"></i>
+                    <i class="ri-play-fill" id="masterplay"></i>
+                    <i class="ri-skip-forward-line" id="next"></i>
+                </div>
+            </div>
+        </div>
+        <div class="albums">
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">xyz </span>
+                <span class="timestamp">05:34 </span>
+                <span class="songListPlay"><i id="0" class="songItemPlay ri-play-circle-line"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">xyz </span>
+                <span class="timestamp">05:34 </span>
+                <span class="songListPlay"><i id="1" class="songItemPlay ri-play-circle-line"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">xyz </span>
+                <span class="timestamp">05:34 </span>
+                <span class="songListPlay"><i id="2" class="songItemPlay ri-play-circle-line"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">xyz </span>
+                <span class="timestamp">05:34 </span>
+                <span class="songListPlay"><i id="3" class="songItemPlay ri-play-circle-line"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">xyz </span>
+                <span class="timestamp">05:34 </span>
+                <span class="songListPlay"><i id="4" class="songItemPlay ri-play-circle-line"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">xyz </span>
+                <span class="timestamp">05:34 </span>
+                <span class="songListPlay"><i id="5" class="songItemPlay ri-play-circle-line"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">xyz </span>
+                <span class="timestamp">05:34 </span>
+                <span class="songListPlay"><i id="6" class="songItemPlay ri-play-circle-line"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">xyz </span>
+                <span class="timestamp">05:34 </span>
+                <span class="songListPlay"><i id="7" class="songItemPlay ri-play-circle-line"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">xyz </span>
+                <span class="timestamp">05:34 </span>
+                <span class="songListPlay"><i id="8" class="songItemPlay ri-play-circle-line"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">xyz </span>
+                <span class="timestamp">05:34 </span>
+                <span class="songListPlay"><i id="9" class="songItemPlay ri-play-circle-line"></i></span>
+            </div>
+
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">xyz </span>
+                <span class="timestamp">05:34 </span>
+                <span class="songListPlay"><i id="10" class="songItemPlay ri-play-circle-line"></i></span>
+            </div>
+            
+            <div class="songItem">
+                <img alt="1">
+                <span class="songName">xyz </span>
+                <span class="timestamp">05:34 </span>
+                <span class="songListPlay"><i id="11" class="songItemPlay ri-play-circle-line"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
