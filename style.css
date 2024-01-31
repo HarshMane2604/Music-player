@@ -277,7 +277,7 @@ html, body {
 }
 
 
-@media (max-width:600px) {
+@media screen and (max-width:600px) {
     .nav {
         height: 7vh;
         width: 100%;
