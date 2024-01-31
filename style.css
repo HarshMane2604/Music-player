@@ -276,16 +276,26 @@ html, body {
    scale: 1.2;
 }
 
+
 @media (max-width:600px) {
     .nav {
-        height: 10vw;
+        height: 7vh;
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 45vw;
+        padding: 0 5vw;
     }
 
     .nav-logo h2{
-        font-size: 1rem;
+        font-size: 5vw;
+        margin-left: 2vw;
         white-space: nowrap;
+    }    
+
+    .nav-logo img{
+        height: 8vw;
+        width: 8vw;
+        object-fit: cover;
     }
 
     .nav-menu {
@@ -294,6 +304,7 @@ html, body {
 
     .nav-menu>i{
         display: block;
+        font-size: 5vw;
     }
 
     .nav-mid {
@@ -303,34 +314,80 @@ html, body {
     .nav-end {
         display: none;
     }
-}
 
-@media (max-width:800px) {
-    .nav {
-        height: 8vw;
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-y: hidden;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .player {
+        height: 30vh;
         width: 100%;
-        justify-content: space-between;
-        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        overflow-y: hidden;
     }
 
-    .nav-menu {
-        justify-content: space-between;
+    .player .song-img {
+        display: none;
     }
 
-    .nav-logo h2{
-        font-size: 1rem;
-        white-space: nowrap;
+    .player .bottom-options i {
+        font-size: 8vw;
+        margin-left: 8vw;
     }
 
-    .nav-mid i{
-        font-size: 0.8rem;
+    .player .song-gif {
+        flex-direction: row-reverse;
+        top: 10%;
+        left: 25%;
+        text-align: left;
     }
 
-    .nav-mid span{
-        font-size: 0.8rem;
+    .player .song-gif #gif {
+        width: 10vw;
+        margin-left: 2vw;
     }
 
-    .nav-end i{
-        font-size: 1rem;
+    .player .song-gif #masterSongName{
+        font-size: 4vw;
+        margin: 0;
     }
+
+    .albums {
+        height: 70vh;
+        width: 100%;
+    }
+
+    .albums .songItem {
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .albums .songItem img{
+        height: 80%;
+        width: 80%;
+    } 
+
+    .albums .songItem .songName {
+       font-size: 3vw;
+    }
+
+    .albums .songItem .timestamp {
+        font-size: 2vw;
+        margin-top: 0;
+    }
+
+    .albums .songItem .songListPlay  {
+        font-size: 8vw;
+    }
+
 }
